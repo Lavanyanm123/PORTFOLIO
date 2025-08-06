@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import myPhoto from '../assets/myPhoto.jpg';
 
 const Hero = () => (
-  <div className="container text-center py-5">
+  <div className="container text-center py-5 text-white"> {/* Added text-white for bright text */}
     <motion.img
       src={myPhoto}
       alt="Your Photo"
@@ -19,11 +19,12 @@ const Hero = () => (
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.5, duration: 1 }}
+      className="text-white"
     >
       Lavanya N M
     </motion.h1>
     <motion.h4
-      className="text-secondary"
+      className="text-info" // Changed to text-info for a bright accent
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1, duration: 1 }}

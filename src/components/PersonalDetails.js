@@ -24,12 +24,12 @@ const PersonalDetails = () => {
 
   return (
     <div className="container my-5">
-      <h2 className="text-center mb-4">Personal Details Puzzle</h2>
+      <h2 className="text-center mb-4"  style={{ color: '#ff9800' }}>Personal Details Puzzle</h2>
       <div className="row justify-content-center">
         {order.map((detailIdx, i) => (
           <div key={i} className="col-10 col-md-3 mb-3">
             <motion.div
-              className="card p-3 shadow-sm text-center"
+              className="card p-3  text-center"
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: revealed[i] ? 1 : 0.7, y: revealed[i] ? 0 : 50 }}
