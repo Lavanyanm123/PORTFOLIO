@@ -6,6 +6,9 @@ import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import DownloadCV from './components/DownloadCV';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -19,7 +22,10 @@ function App() {
       <AboutMe />
       <Skills />
       <Projects />
+      <Education />
+      <Experience />
       <DownloadCV />
+      <Contact />
     </div>
   );
 }
