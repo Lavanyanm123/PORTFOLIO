@@ -12,7 +12,7 @@ const shuffledOrder = [2, 0, 1]; // Example shuffle order
 
 const PersonalDetails = () => {
   const [revealed, setRevealed] = useState([false, false, false]);
-  const [order, setOrder] = useState(shuffledOrder);
+  const [order] = useState(shuffledOrder);
 
   const handleReveal = (idx) => {
     setRevealed((prev) => {
